@@ -1,0 +1,11 @@
+.tarjeta{
+    margin:25px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(155, 241, 212);
+}
+
+.image{
+    height: 40%;
+   
+}
