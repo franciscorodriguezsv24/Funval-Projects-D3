@@ -1,13 +1,13 @@
 import './App.css';
-import Tarea from './componentes/Tarea';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ListaDeTareas from './componentes/ListaDeTareas';
 
 function App() {
   return (
-    <div className="App">
+    <div >
 
-     <Tarea/>
-
+     
+<ListaDeTareas/>
       
     </div>
   );

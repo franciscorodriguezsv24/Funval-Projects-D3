@@ -1,11 +1,20 @@
-import {AiFillAlipaySquare} from 'react-icons/ai'
+import {AiOutlineCloseCircle} from 'react-icons/ai'
 import '../hoja-de-estilos/Tarea.css'
+import React from 'react';
 
-function Tarea(){
+function Tarea({id, texto, completada, completarTarea, eliminarTarea}){
     return(
-        <div className='App'>
-        <AiFillAlipaySquare className='tarea-icon'/>
 
+        <div className={completada ? 'tarea-contenedor completada' : 'tarea-contenedor'}>
+          <div className='tarea-texto'
+          onClick={() => completarTarea(id)}>
+          {texto}
+          </div>
+          <div className='tarea-contenedor-iconos'
+          onClick={() => eliminarTarea(id)}>
+          
+          <AiOutlineCloseCircle className='tarea-icono'/>
+          </div>
         </div>
     );
 
