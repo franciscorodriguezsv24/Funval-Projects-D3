@@ -19,9 +19,9 @@ function App() {
       <Navbar/>
          <Routes>
            <Route path='/home' exact Component={Home}/>
-           <Route path='/features' exact Component={Features}/>
-           <Route path='/store' exact Component={Store}/>
-           <Route path='/' exact component={Inicio}/>
+           <Route path='/link' exact Component={Features}/>
+           <Route path='/store' exact Component={Inicio}/>
+
          </Routes>
     </Router>
 
